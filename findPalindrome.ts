@@ -1,11 +1,10 @@
-```typescript
 function findPalindrome(s: string): string {
   // If string is empty or has only one character, return the string itself as it is a palindrome
   if (s == null || s.length < 1) return s;
 
   let start = 0;
   let end = 0;
-  
+
   for (let i = 0; i < s.length; i++) {
     // Check for palindromes of odd length (centered at current character)
     let length1 = expandAroundCenter(s, i, i);
@@ -32,4 +31,3 @@ function expandAroundCenter(s: string, left: number, right: number) {
   // Return length of palindrome
   return right - left - 1;
 }
-```
