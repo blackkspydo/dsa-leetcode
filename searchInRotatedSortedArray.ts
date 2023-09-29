@@ -73,4 +73,4 @@ function searchInRotatedSortedArray(nums: number[], target: number): number {
     return -1;
 }
 
-This function uses a binary search approach to achieve O(log n) time complexity. It iterates through the array, and for each iteration it checks the mid element of the current range. If mid element is the target, it returns its index. If not, it checks if the target lies in the sorted part of the array and adjusts the range accordingly until finding the target or exhausting the search space.
+// This function uses a binary search approach to achieve O(log n) time complexity. It iterates through the array, and for each iteration it checks the mid element of the current range. If mid element is the target, it returns its index. If not, it checks if the target lies in the sorted part of the array and adjusts the range accordingly until finding the target or exhausting the search space.
